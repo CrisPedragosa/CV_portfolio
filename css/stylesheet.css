@@ -98,6 +98,30 @@ nav:hover{
     font-weight: 800;
 }
 
+@media (max-width: 600px) {
+    nav {
+        width: 70px;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        height: 100%;
+    }
+
+    .logo img {
+        width: 30px; 
+        height: 30px;
+        margin-left: 20px;
+    }
+
+    nav:hover{
+        width: 70px;
+    }
+
+    a{
+        padding-left: 5px;
+    }
+}
+
 /*MENU NAV*/
 
 .scroll{
@@ -145,6 +169,27 @@ b{
     font-weight: 400;
     color: #FFFFFF; 
     
+}
+
+@media (max-width: 800px) {
+
+    .section-title{
+        font-size: 40px;
+        margin: 70px 12px 0 12px;
+    }
+
+    section{
+        margin: 0 0 0 148px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    section{
+        margin: 0 0 0 120px;
+    }
+
 }
 
 
@@ -196,7 +241,6 @@ font-size: 48px;
     object-fit: cover;
 }
 
-/*Agrega estas líneas al final de tu archivo CSS*/ 
 
 @keyframes fadeInFromRight {
     from {
@@ -222,6 +266,72 @@ font-size: 48px;
     animation: fadeInFromRight 1s ease-out, slideInFromRight 1s ease-out;
 }
 
+
+@media (max-width: 800px) {
+
+    .home{
+        gap: 48px;
+    }
+    
+    .title{ 
+        width: 340px;
+        color: #FFFFFF;
+    }
+    
+    
+    .home h1,h2{
+    line-height: 80px;
+    letter-spacing: 0.012em;
+    text-transform: uppercase;
+    }
+    
+    .home h2{
+        font-size: 30px;
+    }
+    
+    .home h1{
+        font-size: 86px;
+    }
+       
+    
+    .home .IMG{
+        width: 340px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .home{
+        gap: 30px;
+    }
+    
+    .title{ 
+        width: 300px;
+        color: #FFFFFF;
+    }
+    
+    
+    .home h1,h2{
+    line-height: 80px;
+    letter-spacing: 0.012em;
+    text-transform: uppercase;
+    }
+    
+    .home h2{
+        font-size: 30px;
+    }
+    
+    .home h1{
+        font-size: 86px;
+    }
+       
+    
+    .home .IMG{
+        width: 200px;
+    }
+
+}
 
 
 /*HOME*/
@@ -293,6 +403,49 @@ font-size: 48px;
     height: 100%;
 }
 
+@media (max-width: 800px) {
+
+    .boxcontent{
+        margin: 12px;
+        display: block;
+    }
+    
+    .container{
+        margin: 24px 0px;
+        height: 150px;
+        width: 400px;
+    }
+    
+    .details-container {
+        max-width: 700px;
+         
+    }
+
+    .details-container.active {
+        max-height: 1200px;
+    }
+    
+    .education-item {
+        display: block;
+    }
+    
+    .edu-img{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .container{
+        height: auto;
+        width: 300px;
+    }
+    
+    .details-container {
+        max-width: 520px;    
+    }
+}
+
 /*EDUCATION*/
 
 /*EXPERIENCE*/
@@ -359,6 +512,74 @@ font-size: 48px;
     opacity: 1;
     transition: opacity 0.5s ease; 
 }
+
+@media (max-width: 800px) {
+
+    .box-container {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    
+    .box {
+        display: flex;
+        justify-content: space-between;
+        max-height: 300px;
+        width: 650px;
+        overflow: hidden;
+        gap: 48px;
+        padding: 24px;
+        border-radius: 24px;
+        background-color: #d9d9d91f;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, width 0.5s linear;
+    
+    }
+    
+    .box:hover {
+        width: 1250px;
+        transition: all 0.5s ease;
+        transform: scale(1.1);
+    
+    }
+    
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 600px;
+    }
+    
+    .images {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        opacity: 0;
+        transition: opacity 0.5s ease; 
+        display: none;
+        width: 500px;
+    }
+    
+    .images img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .box:hover .images {
+        display: flex;
+        width: auto;
+        opacity: 1;
+        transition: opacity 0.5s ease; 
+    }
+
+}
+
 
 /*SKILLS*/
 
