@@ -729,15 +729,16 @@ font-size: 48px;
 
 
 @media screen and (max-width: 600px) {
-    .skill-list {
-      overflow-x: auto; 
-    }
     
     .skill-list li {
-      display: block;
-      margin-right: 0;
-    }
+        padding: 5px;
   }
+
+  .skill-list img{
+    height: 40px;
+    margin: 0;
+}
+}
 
 /*SKILLS*/
 
