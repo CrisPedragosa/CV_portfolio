@@ -730,6 +730,18 @@ font-size: 48px;
 
 @media screen and (max-width: 600px) {
     
+    .skill-list{
+        max-width: 300px;
+    }
+
+    .skills-icon{
+        margin-top: 5px;
+    }
+
+    .skill-box{
+        padding: 24px 12px;
+    }
+
     .skill-list li {
         padding: 5px;
   }
